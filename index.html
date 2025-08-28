@@ -38,7 +38,7 @@
         <button
           class="flex items-center gap-3 px-2 md:px-4 lg:px-4 md:py-1 lg:py-1 bg-[#41ff6b1a] rounded-[50px]"
         >
-          <span class="text-[#000000] font-bold">0</span
+          <span class="text-[#000000] font-bold" id="heartCount">0</span
           ><img
             class="w-5 md:w-7 lg:w-7 h-5 md:h-7 lg:h-7"
             src="assets/heart.png"
@@ -48,7 +48,7 @@
         <button
           class="flex items-center gap-3 px-2 md:px-4 lg:px-4 md:py-1 lg:py-1 bg-[#41ff6b1a] rounded-[50px]"
         >
-          <span class="text-[#000000] font-bold">100</span
+          <span class="text-[#000000] font-bold" id="coinCount">100</span
           ><img
             class="w-5 md:w-7 lg:w-7 h-5 md:h-7 lg:h-7"
             src="assets/coin.png"
@@ -58,7 +58,7 @@
         <button
           class="bg-green-600 text-white text-[8px] md:text-[16px] lg:text-[16px] px-2 md:px-4 lg:px-4 py-1 rounded-[50px]"
         >
-          2 Copy
+          <span id="copyCount">2</span> Copy
         </button>
       </div>
     </header>
@@ -89,14 +89,16 @@
               <div
                 class="w-10 h-10 flex items-center justify-center rounded-lg bg-red-100"
               >
-                <img src="assets/emergency.png" class="w-6 h-6" alt="" />
+                <img src="assets/emergency.png" class="w-6 h-6" alt="image" />
               </div>
               <div class="mt-2">
                 <h3 class="text-[14px] font-bold">জাতীয় জরুরি সেবা</h3>
                 <p class="text-gray-500 text-[12px]">National Emergency</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">999</p>
           <span
@@ -105,12 +107,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -130,7 +132,9 @@
                 <p class="text-gray-500 text-[12px]">Police</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">999</p>
           <span
@@ -139,12 +143,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -164,7 +168,9 @@
                 <p class="text-gray-500 text-[12px]">Fire Service</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">999</p>
           <span
@@ -173,12 +179,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -198,7 +204,9 @@
                 <p class="text-gray-500 text-[12px]">Ambulance</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">1994-9999</p>
           <span
@@ -207,12 +215,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -232,7 +240,9 @@
                 <p class="text-gray-500 text-[12px]">Women & Child Helpline</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">105</p>
           <span
@@ -241,12 +251,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -266,7 +276,9 @@
                 <p class="text-gray-500 text-[12px]">Anti-Corruption</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">106</p>
           <span
@@ -275,12 +287,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -300,7 +312,9 @@
                 <p class="text-gray-500 text-[12px]">Electricity Outage</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">16216</p>
           <span
@@ -309,12 +323,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -334,7 +348,9 @@
                 <p class="text-gray-500 text-[12px]">Brac</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">16445</p>
           <span
@@ -343,12 +359,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -372,7 +388,9 @@
                 <p class="text-gray-500 text-[12px]">Bangladesh Railway</p>
               </div>
             </div>
-            <button class="text-gray-400 hover:text-red-500">♡</button>
+            <button class="heart-btn text-gray-400 hover:text-red-500">
+              ♡
+            </button>
           </div>
           <p class="text-3xl font-bold">163</p>
           <span
@@ -381,12 +399,12 @@
           >
           <div class="flex gap-3">
             <button
-              class="border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -394,15 +412,19 @@
         </div>
       </div>
 
-      <!-- Right Side (Call History) -->
+      <!-- Right Side -->
       <div class="bg-white shadow rounded-xl p-4 flex flex-col">
         <div class="flex justify-between items-center mb-3">
-          <h3 class="font-semibold text-lg">
+          <h3 class="font-semibold text-lg lg:text-[14px]">
             <i class="fa-regular fa-clock"></i> Call History
           </h3>
-          <button class="bg-green-600 text-white px-5 py-1 rounded-[50px]">
+          <button
+            id="clearHistory"
+            class="bg-green-600 text-white lg:text-[14px] px-5 py-1 rounded-[50px]"
+          >
             Clear
           </button>
+          <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
         </div>
       </div>
     </main>
