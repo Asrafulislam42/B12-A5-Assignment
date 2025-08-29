@@ -10,34 +10,6 @@ for (let i = 0; i < heartButtons.length; i++) {
   });
 }
 
-// // Call button click
-// let coins = 100;
-// const callButtons = document.querySelectorAll(".call-btn");
-// const coinCount = document.getElementById("coinCount");
-// const historyList = document.getElementById("historyList");
-
-// function makeCall() {
-//   let serviceName = this.getAttribute("data-name");
-//   let serviceNumber = this.getAttribute("data-number");
-
-//   if (coins < 20) {
-//     alert("You don't have enough coins to make this call");
-//     return;
-//   }
-
-//   coins -= 20;
-//   coinCount.textContent = coins;
-//   alert("Calling " + serviceName + " at " + serviceNumber);
-
-//   let li = document.createElement("li");
-//   li.textContent = serviceName + " - " + serviceNumber;
-//   historyList.appendChild(li);
-// }
-
-// for (let i = 0; i < callButtons.length; i++) {
-//   callButtons[i].addEventListener("click", makeCall);
-// }
-
 // Call button click
 let coins = 100;
 const callButtons = document.querySelectorAll(".call-btn");
@@ -61,7 +33,18 @@ function makeCall() {
   let formattedTime = currentTime.toLocaleTimeString();
 
   let li = document.createElement("li");
-  li.textContent = serviceName + " - " + serviceNumber + "   " + formattedTime;
+  li.style.display = "flex";
+  li.style.justifyContent = "space-between";
+
+  let leftDiv = document.createElement("div");
+  leftDiv.textContent = serviceName + " " + serviceNumber;
+
+  let rightDiv = document.createElement("div");
+  rightDiv.textContent = formattedTime;
+
+  li.appendChild(leftDiv);
+  li.appendChild(rightDiv);
+
   historyList.appendChild(li);
 }
 
