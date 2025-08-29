@@ -58,7 +58,7 @@
         <button
           class="bg-green-600 text-white text-[8px] md:text-[16px] lg:text-[16px] px-2 md:px-4 lg:px-4 py-1 rounded-[50px]"
         >
-          <span id="copyCount">2</span> Copy
+          <span id="copyCount">0</span> Copy
         </button>
       </div>
     </header>
@@ -108,11 +108,14 @@
           <div class="flex gap-3">
             <button
               class="copy-btn border border-gray-300 rounded px-8 md:px-6 lg:px-5 py-1 text-gray-600 text-[12px] md:text-[10px] lg:text-[12px]"
+              data-number="999"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
               class="call-btn bg-green-600 hover:bg-green-700 text-white rounded px-8 md:px-6 lg:px-5 py-1 text-[12px] md:text-[10px] lg:text-[12px]"
+              data-name="জাতীয় জরুরী সেবা"
+              data-number="999"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -424,8 +427,8 @@
           >
             Clear
           </button>
-          <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
         </div>
+        <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
       </div>
     </main>
     <script src="script.js"></script>
