@@ -1,26 +1,4 @@
 // Heart button click
-// let hearts = 0;
-// const heartButtons = document.querySelectorAll(".heart-btn");
-// heartButtons.forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     hearts++;
-//     heartCount.textContent = hearts;
-//   });
-// });
-
-// let hearts = 0;
-// const heartButtons = document.querySelectorAll(".heart-btn");
-
-// function updateHeartCount() {
-//   hearts++;
-//   heartCount.textContent = hearts;
-// }
-
-// heartButtons.forEach(function (btn) {
-//   btn.addEventListener("click", updateHeartCount);
-// });
-
-// Heart button click
 let hearts = 0;
 const heartButtons = document.querySelectorAll(".heart-btn");
 const heartCount = document.getElementById("heartCount");
@@ -31,29 +9,6 @@ for (let i = 0; i < heartButtons.length; i++) {
     heartCount.textContent = hearts;
   });
 }
-
-// let coins = 100;
-// const callButtons = document.querySelectorAll(".call-btn");
-// // Call button click
-// callButtons.forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     const serviceName = btn.getAttribute("data-name");
-//     const serviceNumber = btn.getAttribute("data-number");
-
-//     if (coins < 20) {
-//       alert("Not enough coins to make a call!");
-//       return;
-//     }
-
-//     coins -= 20;
-//     coinCount.textContent = coins;
-//     alert(`Calling ${serviceName} at ${serviceNumber}`);
-
-//     const li = document.createElement("li");
-//     li.textContent = `${serviceName} - ${serviceNumber}`;
-//     historyList.appendChild(li);
-//   });
-// });
 
 // Call button click
 let coins = 100;
@@ -83,4 +38,23 @@ for (let i = 0; i < callButtons.length; i++) {
   callButtons[i].addEventListener("click", makeCall);
 }
 
+// Clear history
+const clearHistory = document.getElementById("clearHistory");
+clearHistory.addEventListener("click", function () {
+  historyList.innerHTML = "";
+});
+
 // Copy button click
+let copies = 0;
+const copyButtons = document.querySelectorAll(".copy-btn");
+const copyCount = document.getElementById("copyCount");
+
+copyButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    const number = btn.getAttribute("data-number");
+    navigator.clipboard.writeText(number);
+    copies++;
+    copyCount.textContent = copies;
+    alert("Copied " + number + " to clipboard");
+  });
+});
